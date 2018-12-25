@@ -1,0 +1,30 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+
+<script type="text/javascript">
+var a = +prompt("Введите первое число");
+var b = +prompt("Введите второе число");
+var sum = 0;
+
+if (a > b) {
+alert("Ошибка. Число должно B быть больше числа A");
+}
+else {
+for (j=a;j<b;j++){
+	if (j>a && j<b) {
+	sum = sum + j;
+	}
+}
+console.log("Сумма чисел в промежутке от " + a + " до " + b + " равна " + sum);
+for (i=a;i<b;i++){
+	if (i%2 !== 0 && i > a ){
+	console.log(i+ " - нечетное число в промежутке от " + a + " до " + b);
+	}
+}
+}
+</script>
+</body>
+</html>
