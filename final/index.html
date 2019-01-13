@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Final homework</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <style>
+	#backOnTopBtn {
+	display: none;
+	position: fixed; 
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: dimgray;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 3px;
+	font-size: 25px;
+	}
+
+	#backOnTopBtn:hover {
+	background-color: #555;
+	}	
+  </style>
+</head>
+<body>
+	<div class="wrapper">
+	
+	<button onclick="topFunction()" id="backOnTopBtn">^</button>
+	
+	<script>
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+				if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+					document.getElementById("backOnTopBtn").style.display = "block";
+				} 
+				else {
+					document.getElementById("backOnTopBtn").style.display = "none";
+				}
+		}
+
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;	
+	}
+	</script>
+
+		<div class="account-block">
+			<a href="tel:+001555801" class="callback-link">Call +001 555 801</a>
+			<ul class="account-menu">
+				<li><a href="#">WELCOME MSG!</a></li>
+				<li><a href="#">MY ACCOUNT</a></li>
+				<li><a href="#">MY WISHLIST</a></li>
+				<li><a href="#">LOGIN</a></li>
+			</ul>
+		</div>
+
+		<header>
+			<ul class="nav-menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Gallery</a></li>
+				<li><a href="#">Categories</a></li>
+				<li><a href="#">Pages</a></li>
+			</ul>
+			<h1>Shophia</h1>
+			<a class="logo" href="#"><img src="img/header_h1.png" alt="logo"></a>
+			<ul class="social_networks_links">
+				<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+				<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+				<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+			</ul>
+			<ul class="languages-list">
+				<li><a href="#">ENGLISH</a>
+					<ul class="languages-list_sub-menu">
+						<li><a href="#">SPANISH</a></li>
+						<li><a href="#">FRENCH</a></li>
+						<li><a href="#">ITALIAN</a></li>
+					</ul>
+				</li>
+			</ul>
+		</header>
+
+		<div class="slider-block">
+			<div class="ad">
+				<p>MID-SEASON</p>
+				<p>SALE</p>
+				<p><span class="decor_lines_left"></span>UP TO<span class="decor_lines_right"></span></p>
+				<p>50% OFF</p>
+			</div>
+			<a href="#" class="button">SHOP NOW</a>
+			<div class="slider_rectangles">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+
+		<div class="support-block">
+			<div class="shipping">
+				<p>FREE SHIPPING</p>
+				<p>In Order Min $200</p>
+			</div>
+			<div class="returns">
+				<p>30-DAYS RETURNS</p>
+				<p>Money Back Guarantee</p>
+			</div>
+			<div class="support">
+				<p>24/7 SUPPORT</p>
+				<p>Lifestyme Support</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<hr class="decor_line">
+			<h2>Summer Collection</h2>
+			<hr class="decor_line">
+		</div>
+		<div class="summer-collection_block">
+			<div class="product-block">
+				<img src="img/product_1.png" alt="product_1">
+				<img class="icon_sale" src="img/icon_sale_20.png" alt="icon sale">
+				<a href="#" class="btn">+ADD TO CART</a>
+			</div>
+			<div class="product-block">
+				<img src="img/product_2.png" alt="product_2">
+				<a href="#" class="btn">+ADD TO CART</a>
+			</div>
+			<div class="product-block">
+				<img src="img/product_3.png" alt="product_3">
+				<a href="#" class="btn">+ADD TO CART</a>
+			</div>
+			<div class="product-block">
+				<img src="img/product_4.png" alt="product_4">
+				<img class="icon_sale" src="img/icon_sale_40.png" alt="icon sale">
+				<a href="#" class="btn">+ADD TO CART</a>
+			</div>
+			<div class="product-block">
+				<img src="img/product_5.png" alt="product_5">
+				<img class="icon_sale" src="img/icon_sale_20.png" alt="icon sale">
+				<a href="#" class="btn">+ADD TO CART</a>
+			</div>
+			<div class="product-block">
+				<img src="img/product_6.png" alt="product_6">
+				<a href="#" class="btn">+ADD TO CART</a>
+			</div>
+			<div class="product-block">
+				<img src="img/product_7.png" alt="product_7">
+				<a href="#" class="btn">+ADD TO CART</a>
+			</div>
+			<div class="product-block">
+				<img src="img/product_8.png" alt="product_8">
+				<img class="icon_sale" src="img/icon_sale_40.png" alt="icon sale">
+				<a href="#" class="btn">+ADD TO CART</a>
+			</div>
+		</div>
+
+		<footer>
+			<div class="col">
+				<h3>SHOPS</h3>
+				<ul class="shops-list">
+					<li><a href="#">New In</a></li>
+					<li><a href="#">Women</a></li>
+					<li><a href="#">Men</a></li>
+					<li><a href="#">Shoes</a></li>
+					<li><a href="#">Bags & Accessories</a></li>
+					<li><a href="#">Top Brands</a></li>
+					<li><a href="#">Sale & Special Offers</a></li>
+					<li><a href="#">Lookbook</a></li>
+				</ul>
+			</div>
+			<div class="col">
+				<h3>INFORMATION</h3>
+				<ul class="information-list">
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Customer Service</a></li>
+					<li><a href="#">New Collection</a></li>
+					<li><a href="#">Best Sellers</a></li>
+					<li><a href="#">Manufacturers</a></li>
+					<li><a href="#">Privacy policy</a></li>
+					<li><a href="#">Terms & condition</a></li>
+					<li><a href="#">Blog</a></li>
+				</ul>	
+			</div>
+			<div class="col">
+				<h3>CUSTOMER SERVICE</h3>
+				<ul class="customer_service-list">
+					<li><a href="#">Search Terms</a></li>
+					<li><a href="#">Advanced Search</a></li>
+					<li><a href="#">Orders and Returns</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">RSS</a></li>
+					<li><a href="#">Help & FAQs</a></li>
+					<li><a href="#">Consultant</a></li>
+					<li><a href="#">Store Locations</a></li>
+				</ul>
+			</div>
+			<div class="col">
+				<h3>STAY CONNECTED</h3>
+				<ul class="footer_social_networks_links">
+					<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+					<li><a href="#"><i class="fas fa-rss"></i></a></li>
+				</ul>
+				<h3>SUBSCRIBE <span>in</span> OUR NEWS LETTER</h3>
+				<form>
+					<input type="text" placeholder="Enter Your Email Address" maxlength="32">
+					<input type="submit" value="SUBSCRIBE">
+				</form>
+			</div>
+		</footer>
+		
+		<address>
+				<p>@ 2015 Shopia Fashion Store Shopify.</p>
+				<p>All Rights Reserved. Ecommerce Software by Shopify.</p>
+				<p>Designed by MoccaLabs.com</p>
+				<ul class="banks_links">
+					<li><a href="#"><i class="fab fa-cc-visa"></i></a></li>
+					<li><a href="#"><i class="fab fa-cc-mastercard"></i></a></li>
+					<li><a href="#"><i class="fab fa-cc-amex"></i></a></li>
+					<li><a href="#"><i class="fab fa-cc-discover"></i></a></li>
+				</ul>
+			</address>
+	</div>
+</body>
+</html>
